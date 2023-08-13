@@ -224,6 +224,8 @@ html {
   margin: auto;
   width: 366px;
   height: 48px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px #E6007E;
   fill: linear-gradient(360deg, #E30613 0%, #E6007E 32.81%, #951B81 61.46%, #009FE3 100%);
   display: flex;
   justify-content: center;
@@ -467,7 +469,17 @@ html {
   }
 }
 .section-three-content .btn-contact-us {
+  background-image: url(../images/contact-us.svg);
   margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px #E6007E;
+  fill: linear-gradient(360deg, #E30613 0%, #E6007E 32.81%, #951B81 61.46%, #009FE3 100%);
+}
+@media screen and (max-width: 430px) {
+  .section-three-content .btn-contact-us {
+    width: 325px;
+    height: 43px;
+  }
 }
 
 /* ----------------------------section---------------- *//*# sourceMappingURL=mtstyle.css.map */
