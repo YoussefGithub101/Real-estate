@@ -392,6 +392,7 @@ html {
   background-image: url(../images/3d-illustration-bending-grass-field-isolated-agriculture-grass-field-creative-ads\ 2.png);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 @media screen and (max-width: 430px) {
   .section-three {
