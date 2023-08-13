@@ -1,0 +1,73 @@
+@import 'responsive';
+.section-three{
+    min-width:1428px;
+    background-image: url(../images/3d-illustration-bending-grass-field-isolated-agriculture-grass-field-creative-ads\ 2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    @include mobile{
+        min-width:auto;
+        background-size: cover;
+    }
+}
+.section-three-contaner{
+    margin: 0 auto;
+    width: 1428px;
+    height: 825px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    @include mobile{
+        width: auto;
+        height: 904px;
+    }
+}
+.section-three-content{
+    position: absolute;
+    right:0;
+    top:133px;
+    width: 485px;
+    height: 244px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.50);
+    backdrop-filter: blur(10px);
+    @include mobile{
+        width: 374px;
+        height: 233px;
+        right: 50%;
+        transform: translate(50%);
+    }
+    h1{
+        color: #673D89;
+        margin-top: 24px;
+        text-align: center;
+       
+       
+        
+        font-family: "Al-Jazeera-Arabic-Bold";
+        font-weight: bold;
+        font-size: 35px;
+        @include mobile{
+            font-size: 25px;
+        }
+        
+    }
+    h2{
+        
+        color: #673D89;
+    text-align: center;
+     
+    font-family: "Al-Jazeera-Arabic-Bold";
+    font-weight: 700;
+    font-size: 25px;
+    @include mobile{
+        font-size: 20px;
+    }
+    }
+    @include mobile{
+        width: 347px;
+    }
+    .btn-contact-us{
+        margin-top: 50px;
+    }
+}

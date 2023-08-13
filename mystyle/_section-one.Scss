@@ -1,0 +1,101 @@
+/* ----------------------------------section-one---------------------------------------------- */
+@import 'responsive';
+.section-one{
+    display: flex;
+    align-items: center; /* Vertically center items */
+    justify-content: center; /* Horizontally center items */
+    height: calc(100vh * (100 / 75)); /* Calculate scaled height */
+    min-width:1428px;
+    padding: 0;
+    margin: 0;
+    background: url(../images/slıde\ 2.png) ;
+ 
+    background-position: center;
+    background-size:cover; 
+    @include mobile{
+        height: 932px;
+        min-width:auto;
+        background-color: red;
+    }
+}
+
+
+.section-one-contant{
+    margin: 0 auto;
+    width: 1428px;
+   /*  background-color: rgba(255, 0, 0, 0.342); */
+    text-align: center;
+    @include mobile{
+        width: auto;
+    }
+
+}
+.contant{
+    float: right;
+   /*  margin-right: 20px; */
+    width: 496px;
+    height: 276px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(10px);
+    h1{
+        margin-top: 24px;
+        text-align: center;
+        color: #FFF;
+        line-height: 50px;
+        text-shadow: 0px 0px 10px #000;
+        font-family: "Al-Jazeera-Arabic-Bold";
+        font-size: 35px;
+        font-weight: bold;
+        @include mobile{
+            font-size: 25px;
+        }
+        
+    }
+    h2{
+        line-height: 55px;
+        color: #FFF;
+    text-align: center;
+    text-shadow: 0px 0px 5px #000;
+    font-family: "Al-Jazeera-Arabic-Regular";
+    font-size: 30px;
+    font-weight: 400;
+    @include mobile{
+        font-size: 20px;
+    }
+    }
+    @include mobile{
+        width: 347px;
+    }
+}
+.btn-contact-us{
+    background-image: url(../images/Vector.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover; 
+    margin: auto;
+    width: 366px;
+    height: 48px;
+    fill: linear-gradient(360deg, #E30613 0%, #E6007E 32.81%, #951B81 61.46%, #009FE3 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a{
+        color: #FFF;
+        text-decoration: none;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+        font-family: "Al-Jazeera-Arabic-Regular";
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        @include mobile{
+            font-size: 20px;
+        }
+    }
+    @include mobile{
+        width: 265px;
+        height: 29px;
+    }
+}
+ 

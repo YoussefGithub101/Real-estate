@@ -1,0 +1,132 @@
+@import 'responsive';
+
+.section-two{
+    min-width:1428px;
+    height: 974px;
+    background: #F0F0F0;
+    @include mobile{
+        height: auto;
+        min-width:auto;
+        padding-bottom: 100px;
+    }
+}
+.section-two-container{
+    /* background-color: rgba(255, 0, 0, 0.342); */
+    margin: 0 auto;
+    width: 1428px;
+    @include mobile{
+        width: auto;
+    }
+}
+.section-two-logo{
+    padding-top: 74px;
+     gap: 10px;
+     @include mobile{
+         img{
+            width: 69.864px;
+            height: 98.99px;
+         }
+    }
+    h2{
+        width: 364px;
+        height: 132px;
+        color: #951B81;
+        text-align: right;
+        font-family: "Al-Jazeera-Arabic-Bold";
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    @include mobile{
+        width: 251px;
+        height: 99px;
+        font-size: 25px;
+    }
+    }
+}
+.section-two-row{
+    /*  background-color: rgba(255, 0, 0, 0.342); */
+    width: 100%;
+    margin-top: 88.65px;
+    gap: 130px;
+    @include mobile{
+        
+    }
+    .section-two-text{
+        position: relative;
+        float: right;
+        width: 391.637px;
+        height: 167.677px;
+        /* background: linear-gradient(90deg, #FFF 0%, #FDFDFD 55.00%, #F6F6F6 74.00%, #EAEAEA 88.00%, #D9D9D9 100%); */
+        background-image: url(../images/section-two-background.svg);
+        background-position: center;
+        background-size: cover;
+        @include mobile{
+            float: none;
+            margin: 0 auto;
+            
+
+        }   
+        p{
+            padding: 54px 34.83px 37.68px 139.81px;
+            color: #139EB9;
+            text-align: right;
+            font-family: "Al-Jazeera-Arabic-Regular";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+}
+.section-two-col{
+    @include mobile{
+      margin:auto;
+        width: 100%;
+        padding: 0;
+        margin-right: -10px;
+    }
+     
+     
+    .vector1{
+        position: absolute;
+        top:0;
+        z-index: 2;
+        img{
+            height: 220px;
+            width: 121px;
+ 
+        }
+    }
+    .vector2{
+        position: absolute;
+       
+         right: 0;
+            bottom: -53px;
+         z-index: 1;
+ 
+         img{
+            height: 54px;
+         }
+    }
+    h1{
+        position: absolute;
+        top: 42px;
+        left: 43px;
+        z-index: 3;
+        color: #FFF;
+        text-align: center;
+        font-family: "Al-Jazeera-Arabic-Bold";
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+}
+.section-two-row2{
+    margin-top: 133.67px;
+    gap: 0px;
+    @include mobile{
+        gap: 130px;
+    }
+}
