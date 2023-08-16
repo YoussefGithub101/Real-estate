@@ -1,0 +1,103 @@
+@import 'responsive';
+.section-four{
+    position: relative;
+    top:-180px;
+    z-index: 2;
+    background-image: url(../images/Union.svg);
+ /*   background-size: 100% calc(100vw * (100 / 75)); */
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width:1428px;
+    height: 946px;
+    @include mobile{
+        top:-92px;
+        background-image: url(../images/Ellipse\ 14-mobile.svg);
+        min-width: auto;
+        width: 100%;
+       background-size: cover;
+      /*   min-width: 440px; */
+        height:calc( 1495px * (100 / 75)); 
+        
+    }
+}
+.section-four-contaner{
+    width: 1428px;
+    margin: 0 auto;
+    position: relative;
+    top:240px;
+    @include mobile{
+        width: auto;
+    }
+    h2{
+        color: #FFF;
+        margin: auto;
+        text-align: center;
+        width: 288px;
+        height: 36px;
+        font-size: 35px;
+        font-family: "Al-Jazeera-Arabic-Bold";
+        font-weight: 700;
+    }
+}
+.four-row{
+    margin-top: 105px;
+    width: 1428px;
+    @include mobile{
+        width: auto;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 105px;
+        gap: 46px;
+    }
+}
+.four-col{
+    position: relative;
+    @include mobile{
+        width: 100%;
+        margin: auto;
+    }
+}
+.section-four-content{
+    margin: auto;
+    top: 0;
+    position: absolute;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+    width: 294.22px;
+    height: 80.354px;
+    border-radius: 20px;
+    background: #D8D8D8;
+    box-shadow: 0px 4px 4px 0px rgba(103, 61, 137, 0.35);
+    z-index: 5;
+    h3{
+        width: 217.575px;
+        height: 54.394px;
+        color: #673D89;
+        text-align: center;
+        font-family: "Al-Jazeera-Arabic-Bold";
+        font-size: 20px;
+   
+        font-weight: 700;
+ 
+    }
+}
+.section-four-photo{
+    float: right;
+    margin-top: 26px;
+    z-index: 1;
+    width: 294.22px;
+    height: 297.929px;
+    border-radius: 18px;
+    background: #EAEAEA;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    img{
+        padding: 64.28px 40.8px 16.07px 34.61px;
+    }
+    @include mobile{
+        margin: 0 auto;
+        float: none;
+    }
+}

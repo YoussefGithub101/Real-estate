@@ -6,8 +6,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     @include mobile{
+        height:calc( 904px * (100 / 75)); 
         min-width:auto;
         background-size: cover;
+        background-image: url(../images/3d-illustration-bending-grass-field-isolated-agriculture-grass-field-creative-ads\ 2-mobile.png);
+        background-repeat: no-repeat;
+       
     }
 }
 .section-three-contaner{
@@ -19,8 +23,9 @@
     flex-direction: column;
     position: relative;
     @include mobile{
+
         width: auto;
-        height: 904px;
+        height:calc( 904px * (100 / 75)); 
     }
 }
 .section-three-content{

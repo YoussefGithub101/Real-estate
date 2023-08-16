@@ -1,0 +1,96 @@
+@import 'responsive';
+.section-six{
+    position: relative;
+    background-image: url(../images/section-six.svg);
+ 
+    min-width:1428px;
+    height: 275px;
+    fill: linear-gradient(0deg, #301546 9.00%, #673D89 55.21%, #9354C7 100%);
+    @include mobile{
+        background-image:none;
+        background-image: url(../images/section-six-mobile.svg);
+        background-size: cover;
+        min-width:400px;
+        height: auto;
+    }
+}
+.section-six-contaner{
+    position: relative;
+    margin: 0 auto;
+    width: 1428px;
+    display: flex;
+    height: 275px;
+  
+    align-items: center;
+     
+    @include mobile{
+        width: auto;
+        height: 200px; 
+    }
+    h2{
+        position: absolute;
+        right: 100px;
+        color: #FFF;
+        text-align: right;
+        font-family: "Al-Jazeera-Arabic-Bold";
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: capitalize;
+        @include mobile{
+            top: 83px;
+            right: 59px;
+            font-size: 23px;
+            width: 284px;
+            height: 103px;
+        }
+    }
+}
+.section-six::after{
+    content: "";
+    background-image: url(../images/question-mark2.svg);
+    position: absolute;
+  
+    color: white;
+    width: 100%;
+    height: 45px;
+    bottom: 19px;
+    @include mobile{
+        content: "";
+        position: absolute;
+        background-image: none;
+        background-image: url(../images/question-mark2-mobile.svg);
+         background-repeat: no-repeat;
+        background-size: 1058.5px 23.94px; 
+        transform: scaleX(-1);
+        bottom: -10px;
+        overflow: hidden;
+    }
+}
+.section-six::before{
+    content: "";
+    background-image: url(../images/question-mark.svg);
+    position: absolute;
+    z-index: 5;
+    color: white;
+    left: 305px;
+    width: 138px;
+    height: 142px;
+    bottom: 77px;
+    @include mobile{
+        content: "";
+        position: absolute;
+     
+        background-image: url(../images/question-mark-mobile.svg);
+       
+         
+        width: 72.907px;
+        height: 74.687px;
+        left: auto;
+        right: 343px;
+        bottom: 46px;
+      
+    }
+}
+ 
