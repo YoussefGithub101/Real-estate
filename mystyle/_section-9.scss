@@ -1,0 +1,117 @@
+@import 'responsive';
+.section-9{
+    min-width:1428px;
+    background: linear-gradient(180deg, rgba(202, 147, 246, 0.50) 0%, rgba(234, 234, 234, 0.50) 90.63%);
+    @include mobile{
+        min-width:auto;
+      
+    }
+}
+.section-9-contaner{
+    padding-bottom: 48px;
+    min-height: 632px;
+    margin: 0 auto;
+    max-width: 1579px;
+    min-width:1428px;
+    @include mobile{
+        min-width:auto;
+      
+    }
+}
+.section-9-contaner h2{
+    padding-top: 48px;
+   
+    color: #673D89;
+    text-align: center;
+    font-family: 'Al-Jazeera-Arabic-Bold';
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.section-9-row{
+    margin-top: 71px;
+    width: 100%;
+    @include mobile{
+        margin: 0 auto;
+        
+    }
+}
+.section-9-card{
+    position: relative;
+    width: 366px;
+    height: 435px;
+    border-radius: 13px;
+    background: #EBD5FE;
+    box-shadow: 0px 0px 10px 0px rgba(103, 61, 137, 0.50);
+    img{
+        width: 360px;
+        height: 235px;
+        margin: 0 auto;
+        margin-top: 3px;
+    }
+    h4{
+        position: absolute;
+        margin:0 auto;
+         
+        left: 50%;
+        transform: translate(-50%, 0);
+        top: 185px;
+        width: 170px;
+        height: 40px;
+        border-radius: 10px;
+        background: rgba(103, 61, 137, 0.50);
+        backdrop-filter: blur(2px);
+
+
+        color: #FFF;
+        text-align: center;
+        font-family: 'Al-Jazeera-Arabic-Bold';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: capitalize;
+    }
+    @include mobile{
+        margin: auto;
+       
+    }
+}
+.card-body{
+ 
+    p{
+        height: 160px;
+        color: #673D89;
+        text-align: center;
+        font-family: 'Al-Jazeera-Arabic-Regular';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: capitalize;
+    }
+    .section-9-btn{
+        width: 325px;
+        height: 43px;
+    }
+}
+
+@media screen and (min-width: 430px) and (max-width: 1147px)  {
+    .section-9-col{
+       
+       width: 40%;
+       
+    }
+    .section-9-card{
+        margin: 0 auto;
+    }
+}
+@include mobile{
+    .section-9-col{
+    
+        width: 100%;
+        
+     }
+}

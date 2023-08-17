@@ -1,0 +1,64 @@
+@import 'responsive';
+.section-10{
+    min-width:1428px;
+    background-image: url(../images/section-10.png);
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    height: 671px;
+    @include mobile{
+        min-width:auto;
+        background-image: url(../images/section-10-mobile.png);
+        height: 723px;
+        height: calc(723px * (100 / 75));
+    } 
+}
+.section-10-contaner{
+    margin:0 auto;
+    position: relative;
+    width:1428px;
+    background: rgba(255, 0, 0, 0.315) ;
+    @include mobile{
+         width:auto;
+ 
+    } 
+}
+.section-10-contant{
+    position: absolute;
+    width: 560px;
+    height: 265px;
+    right: 10px;
+    top: 180px;
+    border-radius: 18px;
+    background: rgba(217, 217, 217, 0.01);
+    backdrop-filter: blur(5px);
+    @include mobile{
+        right: auto;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        top: 455px;
+        width: 377px;
+        height: 352px;
+    }
+    h2{
+        direction: rtl;
+        width: 514px;
+        color: #FFF;
+        text-align: center;
+        font-family: 'Al-Jazeera-Arabic-Bold';
+        font-size: 30px;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: capitalize;
+        margin:0 auto;
+        @include mobile{
+            width: 346px;
+        
+        }
+    }
+        a{
+            width: 325px;
+            height: 43px;
+        }
+}
