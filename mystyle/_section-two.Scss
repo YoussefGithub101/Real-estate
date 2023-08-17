@@ -32,7 +32,7 @@
         height: 132px;
         color: #951B81;
         text-align: right;
-        font-family: "Al-Jazeera-Arabic-Bold";
+        font-family: "Al-Jazeera-Arabic-Bold", sans-serif;
         font-size: 35px;
         font-style: normal;
         font-weight: 700;
@@ -71,7 +71,7 @@
             padding: 54px 34.83px 37.68px 139.81px;
             color: #139EB9;
             text-align: right;
-            font-family: "Al-Jazeera-Arabic-Regular";
+            font-family: "Al-Jazeera-Arabic-Regular", sans-serif;
             font-size: 20px;
             font-style: normal;
             font-weight: 400;
@@ -92,10 +92,11 @@
         position: absolute;
         top:0;
         z-index: 2;
+        
         img{
             height: 220px;
             width: 121px;
- 
+           
         }
     }
     .vector2{
@@ -116,7 +117,7 @@
         z-index: 3;
         color: #FFF;
         text-align: center;
-        font-family: "Al-Jazeera-Arabic-Bold";
+        font-family: "Al-Jazeera-Arabic-Bold", sans-serif;
         font-size: 80px;
         font-style: normal;
         font-weight: 700;

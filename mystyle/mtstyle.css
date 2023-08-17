@@ -2,11 +2,11 @@
 /* ------------header--------- */
 @font-face {
   font-family: "Al-Jazeera-Arabic-Regular";
-  src: url("../al-jazeera-arabic-d05551b080/ArbFonts.com-(10)/ArbFONTS-Al-Jazeera-Arabic-Regular.ttf") format("truetype");
+  src: url("../fonts/ArbFonts.com-(10)/ArbFONTS-Al-Jazeera-Arabic-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Al-Jazeera-Arabic-Bold";
-  src: url("../al-jazeera-arabic-d05551b080/ArbFonts.com-(10)/ArbFONTS-Al-Jazeera-Arabic-Bold.ttf") format("truetype");
+  src: url("../fonts/ArbFonts.com-(10)/ArbFONTS-Al-Jazeera-Arabic-Bold.ttf") format("truetype");
 }
 html {
   zoom: 75%;
@@ -125,7 +125,7 @@ html {
   color: #FFF;
   text-align: center;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-  font-family: "Al-Jazeera-Arabic-Regular";
+  font-family: "Al-Jazeera-Arabic-Regular", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -216,7 +216,7 @@ html {
   color: #FFF;
   line-height: 50px;
   text-shadow: 0px 0px 10px #000;
-  font-family: "Al-Jazeera-Arabic-Bold";
+  font-family: "Al-Jazeera-Arabic-Bold", sans-serif;
   font-size: 35px;
   font-weight: bold;
 }
@@ -230,7 +230,7 @@ html {
   color: #FFF;
   text-align: center;
   text-shadow: 0px 0px 5px #000;
-  font-family: "Al-Jazeera-Arabic-Regular";
+  font-family: "Al-Jazeera-Arabic-Regular", sans-serif;
   font-size: 30px;
   font-weight: 400;
 }
@@ -254,19 +254,17 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.btn-contact-us a {
   color: #FFF;
   text-decoration: none;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-  font-family: "Al-Jazeera-Arabic-Regular";
+  font-family: "Al-Jazeera-Arabic-Regular", sans-serif;
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 @media screen and (max-width: 430px) {
-  .btn-contact-us a {
+  .btn-contact-us {
     font-size: 20px;
   }
 }
@@ -316,7 +314,7 @@ html {
   height: 132px;
   color: #951B81;
   text-align: right;
-  font-family: "Al-Jazeera-Arabic-Bold";
+  font-family: "Al-Jazeera-Arabic-Bold", sans-serif;
   font-size: 35px;
   font-style: normal;
   font-weight: 700;
@@ -356,7 +354,7 @@ html {
   padding: 54px 34.83px 37.68px 139.81px;
   color: #139EB9;
   text-align: right;
-  font-family: "Al-Jazeera-Arabic-Regular";
+  font-family: "Al-Jazeera-Arabic-Regular", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -396,7 +394,7 @@ html {
   z-index: 3;
   color: #FFF;
   text-align: center;
-  font-family: "Al-Jazeera-Arabic-Bold";
+  font-family: "Al-Jazeera-Arabic-Bold", sans-serif;
   font-size: 80px;
   font-style: normal;
   font-weight: 700;
@@ -469,7 +467,7 @@ html {
   color: #673D89;
   margin-top: 24px;
   text-align: center;
-  font-family: "Al-Jazeera-Arabic-Bold";
+  font-family: "Al-Jazeera-Arabic-Bold", sans-serif;
   font-weight: bold;
   font-size: 35px;
 }
@@ -481,7 +479,7 @@ html {
 .section-three-content h2 {
   color: #673D89;
   text-align: center;
-  font-family: "Al-Jazeera-Arabic-Bold";
+  font-family: "Al-Jazeera-Arabic-Bold", sans-serif;
   font-weight: 700;
   font-size: 25px;
 }
@@ -550,7 +548,7 @@ html {
   width: 288px;
   height: 36px;
   font-size: 35px;
-  font-family: "Al-Jazeera-Arabic-Bold";
+  font-family: "Al-Jazeera-Arabic-Bold", sans-serif;
   font-weight: 700;
 }
 
@@ -602,7 +600,7 @@ html {
   height: 54.394px;
   color: #673D89;
   text-align: center;
-  font-family: "Al-Jazeera-Arabic-Bold";
+  font-family: "Al-Jazeera-Arabic-Bold", sans-serif;
   font-size: 20px;
   font-weight: 700;
 }
@@ -685,7 +683,7 @@ form {
 form h2 {
   color: #951B81;
   text-align: center;
-  font-family: "Al-Jazeera-Arabic-Bold";
+  font-family: "Al-Jazeera-Arabic-Bold", sans-serif;
   font-size: 35px;
   font-weight: 700;
   text-transform: capitalize;
@@ -707,7 +705,7 @@ form input {
   align-items: center;
   color: #808080;
   text-align: right;
-  font-family: "Al-Jazeera-Arabic-Regular";
+  font-family: "Al-Jazeera-Arabic-Regular", sans-serif;
   font-size: 20px;
   font-weight: 300;
   padding-right: 31px;
@@ -716,7 +714,7 @@ form input::-moz-placeholder {
   direction: rtl;
   color: #808080;
   text-align: right;
-  font-family: "Al-Jazeera-Arabic-Regular";
+  font-family: "Al-Jazeera-Arabic-Regular", sans-serif;
   font-size: 20px;
   font-weight: 300;
   font-style: normal;
@@ -726,7 +724,7 @@ form input::placeholder {
   direction: rtl;
   color: #808080;
   text-align: right;
-  font-family: "Al-Jazeera-Arabic-Regular";
+  font-family: "Al-Jazeera-Arabic-Regular", sans-serif;
   font-size: 20px;
   font-weight: 300;
   font-style: normal;
@@ -750,7 +748,7 @@ form textarea {
   resize: none;
   color: #808080;
   text-align: right;
-  font-family: "Al-Jazeera-Arabic-Regular";
+  font-family: "Al-Jazeera-Arabic-Regular", sans-serif;
   font-size: 20px;
   font-weight: 300;
   padding-right: 31px;
@@ -759,7 +757,7 @@ form textarea::-moz-placeholder {
   direction: rtl;
   color: #808080;
   text-align: right;
-  font-family: "Al-Jazeera-Arabic-Regular";
+  font-family: "Al-Jazeera-Arabic-Regular", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
@@ -769,7 +767,7 @@ form textarea::placeholder {
   direction: rtl;
   color: #808080;
   text-align: right;
-  font-family: "Al-Jazeera-Arabic-Regular";
+  font-family: "Al-Jazeera-Arabic-Regular", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
@@ -796,7 +794,7 @@ form button {
   height: 48px;
   /* ----------- */
   color: #FFF;
-  font-family: "Al-Jazeera-Arabic-Bold";
+  font-family: "Al-Jazeera-Arabic-Bold", sans-serif;
   font-size: 23px;
   font-style: normal;
   font-weight: 700;
@@ -846,7 +844,7 @@ form button {
   right: 100px;
   color: #FFF;
   text-align: right;
-  font-family: "Al-Jazeera-Arabic-Bold";
+  font-family: "Al-Jazeera-Arabic-Bold", sans-serif;
   font-size: 35px;
   font-style: normal;
   font-weight: 700;
@@ -946,7 +944,7 @@ form button {
   padding-right: 16.32px;
   color: #FFF;
   text-align: right;
-  font-family: "Al-Jazeera-Arabic-Regular";
+  font-family: "Al-Jazeera-Arabic-Regular", sans-serif;
   font-size: 20px;
   font-weight: 400;
   text-transform: capitalize;
@@ -1107,7 +1105,7 @@ form button {
   color: #FFF;
   text-align: center;
   text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
-  font-family: "Al-Jazeera-Arabic-Bold";
+  font-family: "Al-Jazeera-Arabic-Bold", sans-serif;
   font-size: 35px;
   font-style: normal;
   font-weight: 700;
@@ -1138,7 +1136,7 @@ form button {
   height: 48px;
   /* ----------- */
   color: #FFF;
-  font-family: "Al-Jazeera-Arabic-Regular";
+  font-family: "Al-Jazeera-Arabic-Regular", sans-serif;
   font-size: 25px;
   font-weight: 400;
   text-align: center;
@@ -1180,7 +1178,7 @@ form button {
   padding-top: 48px;
   color: #673D89;
   text-align: center;
-  font-family: "Al-Jazeera-Arabic-Bold";
+  font-family: "Al-Jazeera-Arabic-Bold", sans-serif;
   font-size: 35px;
   font-style: normal;
   font-weight: 700;
@@ -1226,7 +1224,7 @@ form button {
           backdrop-filter: blur(2px);
   color: #FFF;
   text-align: center;
-  font-family: "Al-Jazeera-Arabic-Bold";
+  font-family: "Al-Jazeera-Arabic-Bold", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -1243,7 +1241,7 @@ form button {
   height: 160px;
   color: #673D89;
   text-align: center;
-  font-family: "Al-Jazeera-Arabic-Regular";
+  font-family: "Al-Jazeera-Arabic-Regular", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -1323,7 +1321,7 @@ form button {
   width: 514px;
   color: #FFF;
   text-align: center;
-  font-family: "Al-Jazeera-Arabic-Bold";
+  font-family: "Al-Jazeera-Arabic-Bold", sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: normal;
