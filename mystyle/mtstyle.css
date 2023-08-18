@@ -122,9 +122,11 @@ html {
     width: 332px;
   }
 }
-.contact-us h3 {
-  color: #FFF;
-  text-align: center;
+.contact-us a {
+  padding-left: 20px;
+  color: #FFF !important;
+  text-decoration: none;
+  text-align: right !important;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
   font-family: "Al-Jazeera-Arabic-Regular", sans-serif;
   font-size: 20px;
@@ -133,9 +135,9 @@ html {
   line-height: normal;
 }
 @media screen and (max-width: 430px) {
-  .contact-us h3 {
+  .contact-us a {
     text-align: right;
-    padding-right: 9px;
+    padding-left: 45px;
   }
 }
 
@@ -978,7 +980,7 @@ form button {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 6;
+  z-index: 4;
 }
 .section-7-icons img {
   width: 48.953px;
@@ -1018,7 +1020,7 @@ form button {
   stroke-width: 2px;
   width: 2px;
   height: 93px;
-  z-index: 5;
+  z-index: 2;
   left: 103px;
   top: 76px;
 }
@@ -1036,10 +1038,9 @@ form button {
 .v-line {
   position: absolute;
   background-color: #E6007E;
-  z-index: 2;
   width: 54px;
   height: 2px;
-  z-index: 5;
+  z-index: 2;
   right: -53px;
   top: 50%;
 }

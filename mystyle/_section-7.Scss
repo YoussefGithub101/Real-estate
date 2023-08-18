@@ -60,7 +60,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 6;
+    z-index: 4;
     img{
         width: 48.953px;
         height: 48.953px;
@@ -109,7 +109,7 @@
  
     width: 2px;
     height: 93px;
-    z-index: 5;
+    z-index: 2;
     left: 103px;
     top: 76px;
     .h-dot{
@@ -126,11 +126,10 @@
 .v-line{
     position: absolute;
      background-color: #E6007E;
-   
-     z-index: 2;
+  
      width: 54px;
      height: 2px;
-     z-index: 5;
+     z-index: 2;
      right: -53px;
      top: 50%;
     .v-dot{
