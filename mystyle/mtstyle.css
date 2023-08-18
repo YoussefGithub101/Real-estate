@@ -10,6 +10,7 @@
 }
 html {
   zoom: 75%;
+  scroll-behavior: smooth;
 }
 
 .logo {
@@ -156,14 +157,12 @@ html {
 
 .siler1 {
   min-width: 1428px;
-  background-image: url(../images/slıde-1.png);
+  background-image: url(../images/IMG_2688.PNG);
   height: 1080px;
 }
 @media screen and (max-width: 430px) {
   .siler1 {
-    background-size: cover;
-    min-width: 430px;
-    background-image: url(../images/slider-1-mobile.png);
+    min-width: auto;
   }
 }
 
@@ -836,6 +835,7 @@ form button {
 @media screen and (max-width: 430px) {
   .section-six-contaner {
     width: auto;
+    min-width: 367px;
     height: 200px;
   }
 }
@@ -877,9 +877,9 @@ form button {
     background-image: none;
     background-image: url(../images/question-mark2-mobile.svg);
     background-repeat: no-repeat;
-    background-size: 1058.5px 23.94px;
+    background-size: 1229.5px 27.94px;
     transform: scaleX(-1);
-    bottom: -10px;
+    bottom: -4px;
     overflow: hidden;
   }
 }
@@ -900,11 +900,13 @@ form button {
     content: "";
     position: absolute;
     background-image: url(../images/question-mark-mobile.svg);
-    width: 72.907px;
-    height: 74.687px;
+    background-repeat: no-repeat;
+    background-size: 130.907px 81.687px;
+    width: 104.907px;
+    height: 83.687px;
     left: auto;
-    right: 343px;
-    bottom: 46px;
+    right: 400px;
+    bottom: 47px;
   }
 }
 
@@ -1238,6 +1240,7 @@ form button {
 }
 
 .card-body p {
+  direction: rtl;
   height: 160px;
   color: #673D89;
   text-align: center;

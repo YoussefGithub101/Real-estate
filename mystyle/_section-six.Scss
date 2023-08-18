@@ -12,6 +12,7 @@
         background-size: cover;
         min-width:400px;
         height: auto;
+       
     }
 }
 .section-six-contaner{
@@ -25,6 +26,8 @@
      
     @include mobile{
         width: auto;
+      
+        min-width: 367px;
         height: 200px; 
     }
     h2{
@@ -57,14 +60,15 @@
     height: 45px;
     bottom: 19px;
     @include mobile{
+       
         content: "";
         position: absolute;
         background-image: none;
         background-image: url(../images/question-mark2-mobile.svg);
-         background-repeat: no-repeat;
-        background-size: 1058.5px 23.94px; 
+        background-repeat: no-repeat;
+        background-size: 1229.5px 27.94px;
         transform: scaleX(-1);
-        bottom: -10px;
+        bottom: -4px;
         overflow: hidden;
     }
 }
@@ -81,15 +85,15 @@
     @include mobile{
         content: "";
         position: absolute;
-     
         background-image: url(../images/question-mark-mobile.svg);
-       
-         
-        width: 72.907px;
-        height: 74.687px;
+        background-repeat: no-repeat;
+        background-size: 130.907px 81.687px;
+        width: 104.907px;
+        height: 83.687px;
         left: auto;
-        right: 343px;
-        bottom: 46px;
+        right: 400px;
+        bottom: 47px;
+    
       
     }
 }

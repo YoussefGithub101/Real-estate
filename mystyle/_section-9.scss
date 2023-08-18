@@ -54,7 +54,7 @@
     h4{
         position: absolute;
         margin:0 auto;
-         
+      
         left: 50%;
         transform: translate(-50%, 0);
         top: 185px;
@@ -82,6 +82,7 @@
 .card-body{
  
     p{
+        direction: rtl;
         height: 160px;
         color: #673D89;
         text-align: center;
