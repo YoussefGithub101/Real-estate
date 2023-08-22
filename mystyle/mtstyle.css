@@ -46,7 +46,7 @@ html {
 }
 @media screen and (max-width: 430px) {
   .logo .logo-img {
-    width: 159px;
+    width: 166px;
     height: 66px;
     margin: 0 auto;
   }
@@ -120,6 +120,7 @@ html {
 @media screen and (max-width: 430px) {
   .contact-us {
     width: 332px;
+    margin-right: 0;
   }
 }
 .contact-us a {
