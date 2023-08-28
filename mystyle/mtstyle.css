@@ -1,4 +1,11 @@
 /*
+* Prefixed by:
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 10 version
+*/
+
+/*
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.14,
 * Autoprefixer: v10.4.7
@@ -26,11 +33,15 @@ html {
   left: 50%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+          -moz-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+       transform: translateX(-50%);
   z-index: 30;
   width: 240px;
   height: 169px;
-  border-radius: 0px 0px 10px 10px;
+  -webkit-border-radius: 0px 0px 10px 10px;
+     -moz-border-radius: 0px 0px 10px 10px;
+          border-radius: 0px 0px 10px 10px;
   background: rgba(255, 255, 255, 0.8);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
@@ -41,18 +52,23 @@ html {
     width: 100%;
     height: 79px;
     padding: 0 6px;
-    border-radius: 0;
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+            border-radius: 0;
   }
 }
 .logo .logo-img {
   -ms-flex-negative: 0;
-      flex-shrink: 0;
+      -webkit-flex-shrink: 0;
+          flex-shrink: 0;
   width: 216px;
   height: 85px;
   background: url(../images/image\ 1.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
 }
 @media screen and (max-width: 430px) {
   .logo .logo-img {
@@ -65,20 +81,28 @@ html {
 .whatsapp {
   -webkit-box-align: center;
       -ms-flex-align: center;
+          -webkit-align-items: center;
+             -moz-box-align: center;
           align-items: center;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
-      align-self: center;
+      -webkit-align-self: center;
+          align-self: center;
 }
 @media screen and (max-width: 430px) {
   .whatsapp {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
         -ms-flex-direction: row !important;
+            -webkit-flex-direction: row !important;
+               -moz-box-orient: horizontal !important;
+               -moz-box-direction: normal !important;
             flex-direction: row !important;
     margin: 0 auto;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
+            -webkit-justify-content: center;
+               -moz-box-pack: center;
             justify-content: center;
   }
 }
@@ -88,16 +112,24 @@ html {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
+          -webkit-flex-direction: column;
+             -moz-box-orient: vertical;
+             -moz-box-direction: normal;
           flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
+          -webkit-justify-content: center;
+             -moz-box-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
+          -webkit-align-items: center;
+             -moz-box-align: center;
           align-items: center;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
-      align-self: center;
+      -webkit-align-self: center;
+          align-self: center;
   bottom: 70px;
   right: 63px;
   z-index: 5;
@@ -107,20 +139,28 @@ html {
     right: 50%;
     -webkit-transform: translate(50%);
         -ms-transform: translate(50%);
-            transform: translate(50%);
+            -moz-transform: translate(50%);
+              -o-transform: translate(50%);
+         transform: translate(50%);
   }
 }
 
 .whatsapp-logo {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
+          -webkit-justify-content: center;
+             -moz-box-pack: center;
           justify-content: center;
   background-image: url(../images/Ellipse\ 14.svg);
   background-position: center;
-  background-size: cover;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
   width: 78px;
   height: 78px;
 }
@@ -135,7 +175,8 @@ html {
 .whatsapp-logo img {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
-      align-self: center;
+      -webkit-align-self: center;
+          align-self: center;
 }
 @media screen and (max-width: 430px) {
   .whatsapp-logo img {
@@ -148,11 +189,14 @@ html {
   margin-right: -30px;
   width: 338px;
   height: 42px;
-  border-radius: 10px;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
   border: 1px solid #49FE6E;
   background: #1BD741;
   -webkit-box-shadow: 0px 0px 10px 0px #1BD741;
-          box-shadow: 0px 0px 10px 0px #1BD741;
+          -moz-box-shadow: 0px 0px 10px 0px #1BD741;
+       box-shadow: 0px 0px 10px 0px #1BD741;
 }
 @media screen and (max-width: 430px) {
   .contact-us {
@@ -186,7 +230,9 @@ html {
   min-width: 1428px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
   height: 1080px;
 }
 @media screen and (max-width: 430px) {
@@ -234,7 +280,9 @@ html {
   top: 251px;
   width: 496px;
   height: 276px;
-  border-radius: 16px;
+  -webkit-border-radius: 16px;
+     -moz-border-radius: 16px;
+          border-radius: 16px;
   background: rgba(255, 255, 255, 0.1);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
@@ -247,7 +295,9 @@ html {
     left: 50%;
     -webkit-transform: translate(-50%, 100%);
         -ms-transform: translate(-50%, 100%);
-            transform: translate(-50%, 100%);
+            -moz-transform: translate(-50%, 100%);
+              -o-transform: translate(-50%, 100%);
+         transform: translate(-50%, 100%);
   }
 }
 .contant h1 {
@@ -283,23 +333,37 @@ html {
 .btn-contact-us {
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
   margin: auto;
   width: 366px;
   height: 48px;
-  border-radius: 10px;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
   -webkit-box-shadow: 0px 0px 10px 0px #E6007E;
-          box-shadow: 0px 0px 10px 0px #E6007E;
+          -moz-box-shadow: 0px 0px 10px 0px #E6007E;
+       box-shadow: 0px 0px 10px 0px #E6007E;
   background: -webkit-gradient(linear, left bottom, left top, from(#E6007E), to(#951B81));
+  background: -o-linear-gradient(bottom, #E6007E, #951B81);
+  background: -webkit-linear-gradient(bottom, #E6007E, #951B81);
+  background: -moz-linear-gradient(bottom, #E6007E, #951B81);
   background: linear-gradient(360deg, #E6007E, #951B81);
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
+          -webkit-justify-content: center;
+             -moz-box-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
+          -webkit-align-items: center;
+             -moz-box-align: center;
           align-items: center;
   color: #FFF;
   text-decoration: none;
@@ -389,7 +453,9 @@ html {
   /* background: linear-gradient(90deg, #FFF 0%, #FDFDFD 55.00%, #F6F6F6 74.00%, #EAEAEA 88.00%, #D9D9D9 100%); */
   background-image: url(../images/section-two-background.svg);
   background-position: center;
-  background-size: cover;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
 }
 @media screen and (max-width: 430px) {
   .section-two-row .section-two-text {
@@ -463,13 +529,17 @@ html {
   background-image: url(../images/3d-illustration-bending-grass-field-isolated-agriculture-grass-field-creative-ads\ 2.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
 }
 @media screen and (max-width: 430px) {
   .section-three {
     height: 1205.3333333333px;
     min-width: auto;
-    background-size: cover;
+    -moz-background-size: cover;
+      -o-background-size: cover;
+         background-size: cover;
     background-image: url(../images/3d-illustration-bending-grass-field-isolated-agriculture-grass-field-creative-ads\ 2-mobile.png);
     background-repeat: no-repeat;
   }
@@ -482,10 +552,15 @@ html {
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
+          -webkit-flex-direction: column;
+             -moz-box-orient: vertical;
+             -moz-box-direction: normal;
           flex-direction: column;
   position: relative;
 }
@@ -502,7 +577,9 @@ html {
   top: 133px;
   width: 485px;
   height: 244px;
-  border-radius: 16px;
+  -webkit-border-radius: 16px;
+     -moz-border-radius: 16px;
+          border-radius: 16px;
   background: rgba(255, 255, 255, 0.5);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
@@ -514,7 +591,9 @@ html {
     right: 50%;
     -webkit-transform: translate(50%);
         -ms-transform: translate(50%);
-            transform: translate(50%);
+            -moz-transform: translate(50%);
+              -o-transform: translate(50%);
+         transform: translate(50%);
   }
 }
 .section-three-content h1 {
@@ -549,9 +628,12 @@ html {
 }
 .section-three-content .btn-contact-us {
   margin-top: 50px;
-  border-radius: 10px;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
   -webkit-box-shadow: 0px 0px 10px 0px #E6007E;
-          box-shadow: 0px 0px 10px 0px #E6007E;
+          -moz-box-shadow: 0px 0px 10px 0px #E6007E;
+       box-shadow: 0px 0px 10px 0px #E6007E;
 }
 @media screen and (max-width: 430px) {
   .section-three-content .btn-contact-us {
@@ -577,7 +659,9 @@ html {
     background-image: url(../images/Ellipse\ 14-mobile.svg);
     min-width: auto;
     width: 100%;
-    background-size: cover;
+    -moz-background-size: cover;
+      -o-background-size: cover;
+         background-size: cover;
     /*   min-width: 440px; */
     height: 1993.3333333333px;
   }
@@ -615,9 +699,14 @@ html {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
+            -webkit-flex-direction: column;
+               -moz-box-orient: vertical;
+               -moz-box-direction: normal;
             flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
+            -webkit-justify-content: center;
+               -moz-box-pack: center;
             justify-content: center;
     margin: 0 auto;
     margin-top: 105px;
@@ -641,34 +730,52 @@ html {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
+          -webkit-flex-direction: column;
+             -moz-box-orient: vertical;
+             -moz-box-direction: normal;
           flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
+          -webkit-align-items: center;
+             -moz-box-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
+          -webkit-justify-content: center;
+             -moz-box-pack: center;
           justify-content: center;
   width: 294.22px;
   height: 80.354px;
-  border-radius: 20px;
+  -webkit-border-radius: 20px;
+     -moz-border-radius: 20px;
+          border-radius: 20px;
   background: #D8D8D8;
   -webkit-box-shadow: 0px 4px 4px 0px rgba(103, 61, 137, 0.35);
-          box-shadow: 0px 4px 4px 0px rgba(103, 61, 137, 0.35);
+          -moz-box-shadow: 0px 4px 4px 0px rgba(103, 61, 137, 0.35);
+       box-shadow: 0px 4px 4px 0px rgba(103, 61, 137, 0.35);
   z-index: 5;
 }
 .section-four-content h3 {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
+          -webkit-align-items: center;
+             -moz-box-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
+          -webkit-justify-content: center;
+             -moz-box-pack: center;
           justify-content: center;
   width: 217.575px;
   height: 54.394px;
@@ -685,18 +792,27 @@ html {
   z-index: 1;
   width: 294.22px;
   height: 297.929px;
-  border-radius: 18px;
+  -webkit-border-radius: 18px;
+     -moz-border-radius: 18px;
+          border-radius: 18px;
   background: #EAEAEA;
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
+          -webkit-align-items: center;
+             -moz-box-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
+          -webkit-justify-content: center;
+             -moz-box-pack: center;
           justify-content: center;
 }
 .section-four-photo img {
@@ -736,7 +852,9 @@ html {
 
 .section-form-img {
   width: 100%;
-  border-radius: 30px;
+  -webkit-border-radius: 30px;
+     -moz-border-radius: 30px;
+          border-radius: 30px;
   height: 100%;
 }
 
@@ -759,10 +877,15 @@ html {
 form {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
+          -webkit-flex-direction: column;
+             -moz-box-orient: vertical;
+             -moz-box-direction: normal;
           flex-direction: column;
   gap: 15px;
 }
@@ -780,18 +903,24 @@ form h2 {
   }
 }
 form input {
-  border-radius: 5px;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
   border: 2px solid #EAEAEA;
   background: #FFF;
   margin: 0 auto;
   text-align: right;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
   width: 598px;
   height: 66px;
   -webkit-box-align: center;
       -ms-flex-align: center;
+          -webkit-align-items: center;
+             -moz-box-align: center;
           align-items: center;
   color: #808080;
   text-align: right;
@@ -840,6 +969,46 @@ form input::-ms-input-placeholder {
   font-style: normal;
   line-height: normal;
 }
+form input::-webkit-input-placeholder {
+  direction: rtl;
+  color: #808080;
+  text-align: right;
+  font-family: "Al-Jazeera-Arabic-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: normal;
+}
+form input:-moz-placeholder {
+  direction: rtl;
+  color: #808080;
+  text-align: right;
+  font-family: "Al-Jazeera-Arabic-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: normal;
+}
+form input::-moz-placeholder {
+  direction: rtl;
+  color: #808080;
+  text-align: right;
+  font-family: "Al-Jazeera-Arabic-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: normal;
+}
+form input:-ms-input-placeholder {
+  direction: rtl;
+  color: #808080;
+  text-align: right;
+  font-family: "Al-Jazeera-Arabic-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: normal;
+}
 form input::placeholder {
   direction: rtl;
   color: #808080;
@@ -857,11 +1026,15 @@ form input::placeholder {
   }
 }
 form textarea {
-  border-radius: 5px;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
   border: 2px solid #EAEAEA;
   background: #FFF;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
   width: 598px;
   height: 315px;
@@ -915,6 +1088,46 @@ form textarea::-ms-input-placeholder {
   font-weight: 300;
   line-height: normal;
 }
+form textarea::-webkit-input-placeholder {
+  direction: rtl;
+  color: #808080;
+  text-align: right;
+  font-family: "Al-Jazeera-Arabic-Regular", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+form textarea:-moz-placeholder {
+  direction: rtl;
+  color: #808080;
+  text-align: right;
+  font-family: "Al-Jazeera-Arabic-Regular", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+form textarea::-moz-placeholder {
+  direction: rtl;
+  color: #808080;
+  text-align: right;
+  font-family: "Al-Jazeera-Arabic-Regular", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+form textarea:-ms-input-placeholder {
+  direction: rtl;
+  color: #808080;
+  text-align: right;
+  font-family: "Al-Jazeera-Arabic-Regular", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
 form textarea::placeholder {
   direction: rtl;
   color: #808080;
@@ -934,15 +1147,22 @@ form textarea::placeholder {
 form button {
   -webkit-filter: drop-shadow(0px 0px 10px rgba(103, 61, 137, 0.35));
           filter: drop-shadow(0px 0px 10px rgba(103, 61, 137, 0.35));
-  border-radius: 14px;
+  -webkit-border-radius: 14px;
+     -moz-border-radius: 14px;
+          border-radius: 14px;
   border: none;
   margin: 0 auto;
   margin-top: 20px;
   background: -webkit-gradient(linear, left bottom, left top, from(#E6007E), to(#951B81));
+  background: -o-linear-gradient(bottom, #E6007E, #951B81);
+  background: -webkit-linear-gradient(bottom, #E6007E, #951B81);
+  background: -moz-linear-gradient(bottom, #E6007E, #951B81);
   background: linear-gradient(360deg, #E6007E, #951B81);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
   width: 594px;
   height: 48px;
   /* ----------- */
@@ -966,11 +1186,16 @@ form button {
   min-width: 1428px;
   height: 275px;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(9%, #301546), color-stop(55.21%, #673D89), to(#9354C7));
+  background: -o-linear-gradient(bottom, #301546 9%, #673D89 55.21%, #9354C7 100%);
+  background: -webkit-linear-gradient(bottom, #301546 9%, #673D89 55.21%, #9354C7 100%);
+  background: -moz-linear-gradient(bottom, #301546 9%, #673D89 55.21%, #9354C7 100%);
   background: linear-gradient(0deg, #301546 9%, #673D89 55.21%, #9354C7 100%);
 }
 @media screen and (max-width: 430px) {
   .section-six {
-    background-size: cover;
+    -moz-background-size: cover;
+      -o-background-size: cover;
+         background-size: cover;
     min-width: 400px;
     height: auto;
   }
@@ -982,10 +1207,14 @@ form button {
   width: 1428px;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
   height: 275px;
   -webkit-box-align: center;
       -ms-flex-align: center;
+          -webkit-align-items: center;
+             -moz-box-align: center;
           align-items: center;
 }
 @media screen and (max-width: 430px) {
@@ -1033,10 +1262,14 @@ form button {
     background-image: none;
     background-image: url(../images/question-mark2-mobile.svg);
     background-repeat: no-repeat;
-    background-size: 1229.5px 27.94px;
+    -moz-background-size: 1229.5px 27.94px;
+      -o-background-size: 1229.5px 27.94px;
+         background-size: 1229.5px 27.94px;
     -webkit-transform: scaleX(-1);
         -ms-transform: scaleX(-1);
-            transform: scaleX(-1);
+            -moz-transform: scaleX(-1);
+              -o-transform: scaleX(-1);
+         transform: scaleX(-1);
     bottom: -4px;
     overflow: hidden;
   }
@@ -1059,7 +1292,9 @@ form button {
     position: absolute;
     background-image: url(../images/question-mark-mobile.svg);
     background-repeat: no-repeat;
-    background-size: 130.907px 81.687px;
+    -moz-background-size: 130.907px 81.687px;
+      -o-background-size: 130.907px 81.687px;
+         background-size: 130.907px 81.687px;
     width: 104.907px;
     height: 83.687px;
     left: auto;
@@ -1095,13 +1330,19 @@ form button {
   position: relative;
   width: 476.481px;
   height: 77.238px;
-  border-radius: 35.5px;
+  -webkit-border-radius: 35.5px;
+     -moz-border-radius: 35.5px;
+          border-radius: 35.5px;
   background: #5C2A84;
   -webkit-box-align: center;
       -ms-flex-align: center;
+          -webkit-align-items: center;
+             -moz-box-align: center;
           align-items: center;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
+          -webkit-justify-content: end;
+             -moz-box-pack: end;
           justify-content: end;
 }
 .section-7-contant h3 {
@@ -1133,18 +1374,26 @@ form button {
   width: 94.643px;
   height: 94.643px;
   border: 1px solid #673D89;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
   background: rgba(255, 255, 255, 0.9);
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
+          -webkit-align-items: center;
+             -moz-box-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
+          -webkit-justify-content: center;
+             -moz-box-pack: center;
           justify-content: center;
   z-index: 4;
 }
@@ -1192,7 +1441,9 @@ form button {
 }
 .h-line .h-dot {
   background-color: #E6007E;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
   position: absolute;
   width: 18px;
   height: 18px;
@@ -1200,7 +1451,9 @@ form button {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+       transform: translate(-50%, -50%);
 }
 
 .v-line {
@@ -1214,7 +1467,9 @@ form button {
 }
 .v-line .v-dot {
   background-color: #E6007E;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
   position: absolute;
   width: 18px;
   height: 18px;
@@ -1222,43 +1477,59 @@ form button {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+       transform: translate(-50%, -50%);
 }
 
 @media screen and (max-width: 430px) {
   .section-7-col:nth-child(1) {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
+            -webkit-order: 1;
+               -moz-box-ordinal-group: 2;
             order: 1;
   }
   .section-7-col:nth-child(2) {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
+            -webkit-order: 2;
+               -moz-box-ordinal-group: 3;
             order: 2;
   }
   .section-7-col:nth-child(3) {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
+            -webkit-order: 3;
+               -moz-box-ordinal-group: 4;
             order: 3;
   }
   .section-7-col:nth-child(4) {
     -webkit-box-ordinal-group: 7;
         -ms-flex-order: 6;
+            -webkit-order: 6;
+               -moz-box-ordinal-group: 7;
             order: 6;
   }
   .section-7-col:nth-child(5) {
     -webkit-box-ordinal-group: 6;
         -ms-flex-order: 5;
+            -webkit-order: 5;
+               -moz-box-ordinal-group: 6;
             order: 5;
   }
   .section-7-col:nth-child(6) {
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
+            -webkit-order: 4;
+               -moz-box-ordinal-group: 5;
             order: 4;
   }
   .section-7-col:nth-child(7) {
     -webkit-box-ordinal-group: 8;
         -ms-flex-order: 7;
+            -webkit-order: 7;
+               -moz-box-ordinal-group: 8;
             order: 7;
   }
 }
@@ -1267,9 +1538,13 @@ form button {
   background-image: url(../images/DJI_0226\ 2.png);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
+          -webkit-justify-content: center;
+             -moz-box-pack: center;
           justify-content: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
   height: 556px;
   height: 741.3333333333px;
 }
@@ -1294,18 +1569,26 @@ form button {
 .section-8-contant {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
+          -webkit-align-items: center;
+             -moz-box-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
+          -webkit-justify-content: center;
+             -moz-box-pack: center;
           justify-content: center;
   margin: 0 auto;
   padding-top: 32px;
   width: 653px;
   height: 174px;
-  border-radius: 7px;
+  -webkit-border-radius: 7px;
+     -moz-border-radius: 7px;
+          border-radius: 7px;
   background: rgba(34, 0, 132, 0.5);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
@@ -1342,22 +1625,35 @@ form button {
   text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
+          -webkit-align-items: center;
+             -moz-box-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
+          -webkit-justify-content: center;
+             -moz-box-pack: center;
           justify-content: center;
   -webkit-filter: drop-shadow(0px 0px 10px rgba(103, 61, 137, 0.35));
           filter: drop-shadow(0px 0px 10px rgba(103, 61, 137, 0.35));
-  border-radius: 14px;
+  -webkit-border-radius: 14px;
+     -moz-border-radius: 14px;
+          border-radius: 14px;
   border: none;
   background: -webkit-gradient(linear, left bottom, left top, from(#E6007E), to(#951B81));
+  background: -o-linear-gradient(bottom, #E6007E, #951B81);
+  background: -webkit-linear-gradient(bottom, #E6007E, #951B81);
+  background: -moz-linear-gradient(bottom, #E6007E, #951B81);
   background: linear-gradient(360deg, #E6007E, #951B81);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
   width: 366px;
   height: 48px;
   /* ----------- */
@@ -1380,6 +1676,9 @@ form button {
 .section-9 {
   min-width: 1428px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(202, 147, 246, 0.5)), color-stop(90.63%, rgba(234, 234, 234, 0.5)));
+  background: -o-linear-gradient(top, rgba(202, 147, 246, 0.5) 0%, rgba(234, 234, 234, 0.5) 90.63%);
+  background: -webkit-linear-gradient(top, rgba(202, 147, 246, 0.5) 0%, rgba(234, 234, 234, 0.5) 90.63%);
+  background: -moz-linear-gradient(top, rgba(202, 147, 246, 0.5) 0%, rgba(234, 234, 234, 0.5) 90.63%);
   background: linear-gradient(180deg, rgba(202, 147, 246, 0.5) 0%, rgba(234, 234, 234, 0.5) 90.63%);
 }
 @media screen and (max-width: 430px) {
@@ -1427,10 +1726,13 @@ form button {
   position: relative;
   width: 366px;
   height: 435px;
-  border-radius: 13px;
+  -webkit-border-radius: 13px;
+     -moz-border-radius: 13px;
+          border-radius: 13px;
   background: #EBD5FE;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(103, 61, 137, 0.5);
-          box-shadow: 0px 0px 10px 0px rgba(103, 61, 137, 0.5);
+          -moz-box-shadow: 0px 0px 10px 0px rgba(103, 61, 137, 0.5);
+       box-shadow: 0px 0px 10px 0px rgba(103, 61, 137, 0.5);
 }
 .section-9-card img {
   width: 360px;
@@ -1444,11 +1746,15 @@ form button {
   left: 50%;
   -webkit-transform: translate(-50%, 0);
       -ms-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
+          -moz-transform: translate(-50%, 0);
+            -o-transform: translate(-50%, 0);
+       transform: translate(-50%, 0);
   top: 185px;
   width: 170px;
   height: 40px;
-  border-radius: 10px;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
   background: rgba(103, 61, 137, 0.5);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
@@ -1502,9 +1808,13 @@ form button {
   background-image: url(../images/section-10.png);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
+          -webkit-justify-content: center;
+             -moz-box-pack: center;
           justify-content: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
   height: 671px;
 }
 @media screen and (max-width: 430px) {
@@ -1534,7 +1844,9 @@ form button {
   height: 265px;
   right: 10px;
   top: 180px;
-  border-radius: 18px;
+  -webkit-border-radius: 18px;
+     -moz-border-radius: 18px;
+          border-radius: 18px;
   background: rgba(217, 217, 217, 0.01);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
@@ -1545,7 +1857,9 @@ form button {
     left: 50%;
     -webkit-transform: translate(-50%, 0%);
         -ms-transform: translate(-50%, 0%);
-            transform: translate(-50%, 0%);
+            -moz-transform: translate(-50%, 0%);
+              -o-transform: translate(-50%, 0%);
+         transform: translate(-50%, 0%);
     top: 455px;
     width: 377px;
     height: 352px;
