@@ -13,6 +13,9 @@ html {
     zoom: 75%;
     scroll-behavior:smooth;
 }
+body{
+  -webkit-text-size-adjust: 100%;
+}
 @import 'header-whatsapp';
 @import 'section-one';
 @import 'section-two';
