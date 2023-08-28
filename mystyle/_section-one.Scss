@@ -7,6 +7,7 @@
     min-width:1428px;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     height: 1080px;
     @include mobile{
         height: auto;
@@ -17,6 +18,7 @@
         .siler1{
             min-width:1428px;
             background-image: url(../images/slıde-2.png);
+            
             height: 1080px;
             @include mobile{
                 min-width:auto;
@@ -86,7 +88,7 @@
     }
 }
 .btn-contact-us{
-    background-image: url(../images/Vector.svg);
+    
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover; 
@@ -95,7 +97,8 @@
     height: 48px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px #E6007E;
-    fill: linear-gradient(360deg, #E30613 0%, #E6007E 32.81%, #951B81 61.46%, #009FE3 100%);
+   
+    background: linear-gradient(360deg, #E6007E, #951B81);
     display: flex;
     justify-content: center;
     align-items: center;

@@ -186,6 +186,7 @@ html {
   min-width: 1428px;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   height: 1080px;
 }
 @media screen and (max-width: 430px) {
@@ -280,7 +281,6 @@ html {
 }
 
 .btn-contact-us {
-  background-image: url(../images/Vector.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -290,7 +290,9 @@ html {
   border-radius: 10px;
   -webkit-box-shadow: 0px 0px 10px 0px #E6007E;
           box-shadow: 0px 0px 10px 0px #E6007E;
-  fill: linear-gradient(360deg, #E30613 0%, #E6007E 32.81%, #951B81 61.46%, #009FE3 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#E6007E), to(#951B81));
+  background: -o-linear-gradient(bottom, #E6007E, #951B81);
+  background: linear-gradient(360deg, #E6007E, #951B81);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -547,12 +549,10 @@ html {
   }
 }
 .section-three-content .btn-contact-us {
-  background-image: url(../images/contact-us.svg);
   margin-top: 50px;
   border-radius: 10px;
   -webkit-box-shadow: 0px 0px 10px 0px #E6007E;
           box-shadow: 0px 0px 10px 0px #E6007E;
-  fill: linear-gradient(360deg, #E30613 0%, #E6007E 32.81%, #951B81 61.46%, #009FE3 100%);
 }
 @media screen and (max-width: 430px) {
   .section-three-content .btn-contact-us {
@@ -933,14 +933,15 @@ form textarea::placeholder {
   }
 }
 form button {
-  fill: linear-gradient(360deg, #E30613 0%, #E6007E 32.81%, #951B81 61.46%, #009FE3 100%);
   -webkit-filter: drop-shadow(0px 0px 10px rgba(103, 61, 137, 0.35));
           filter: drop-shadow(0px 0px 10px rgba(103, 61, 137, 0.35));
   border-radius: 14px;
   border: none;
   margin: 0 auto;
   margin-top: 20px;
-  background-image: url(../images/btn-form.svg);
+  background: -webkit-gradient(linear, left bottom, left top, from(#E6007E), to(#951B81));
+  background: -o-linear-gradient(bottom, #E6007E, #951B81);
+  background: linear-gradient(360deg, #E6007E, #951B81);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -964,15 +965,14 @@ form button {
 
 .section-six {
   position: relative;
-  background-image: url(../images/section-six.svg);
   min-width: 1428px;
   height: 275px;
-  fill: linear-gradient(0deg, #301546 9%, #673D89 55.21%, #9354C7 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(9%, #301546), color-stop(55.21%, #673D89), to(#9354C7));
+  background: -o-linear-gradient(bottom, #301546 9%, #673D89 55.21%, #9354C7 100%);
+  background: linear-gradient(0deg, #301546 9%, #673D89 55.21%, #9354C7 100%);
 }
 @media screen and (max-width: 430px) {
   .section-six {
-    background-image: none;
-    background-image: url(../images/section-six-mobile.svg);
     background-size: cover;
     min-width: 400px;
     height: auto;
@@ -1356,7 +1356,9 @@ form button {
           filter: drop-shadow(0px 0px 10px rgba(103, 61, 137, 0.35));
   border-radius: 14px;
   border: none;
-  background-image: url(../images/btn-form.svg);
+  background: -webkit-gradient(linear, left bottom, left top, from(#E6007E), to(#951B81));
+  background: -o-linear-gradient(bottom, #E6007E, #951B81);
+  background: linear-gradient(360deg, #E6007E, #951B81);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

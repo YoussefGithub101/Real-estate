@@ -1,14 +1,13 @@
 @import 'responsive';
 .section-six{
     position: relative;
-    background-image: url(../images/section-six.svg);
+     
  
     min-width:1428px;
     height: 275px;
-    fill: linear-gradient(0deg, #301546 9.00%, #673D89 55.21%, #9354C7 100%);
+    background: linear-gradient(0deg, #301546 9.00%, #673D89 55.21%, #9354C7 100%);
     @include mobile{
-        background-image:none;
-        background-image: url(../images/section-six-mobile.svg);
+         
         background-size: cover;
         min-width:400px;
         height: auto;

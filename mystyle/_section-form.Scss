@@ -121,13 +121,13 @@ form{
         }
     }
     button{
-        fill: linear-gradient(360deg, #E30613 0%, #E6007E 32.81%, #951B81 61.46%, #009FE3 100%);
+     
             filter: drop-shadow(0px 0px 10px rgba(103, 61, 137, 0.35));
         border-radius: 14px;
         border: none;
         margin: 0 auto;
         margin-top: 20px;
-        background-image: url(../images/btn-form.svg);
+        background: linear-gradient(360deg, #E6007E, #951B81);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
