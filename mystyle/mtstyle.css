@@ -291,7 +291,6 @@ html {
   -webkit-box-shadow: 0px 0px 10px 0px #E6007E;
           box-shadow: 0px 0px 10px 0px #E6007E;
   background: -webkit-gradient(linear, left bottom, left top, from(#E6007E), to(#951B81));
-  background: -o-linear-gradient(bottom, #E6007E, #951B81);
   background: linear-gradient(360deg, #E6007E, #951B81);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -940,7 +939,6 @@ form button {
   margin: 0 auto;
   margin-top: 20px;
   background: -webkit-gradient(linear, left bottom, left top, from(#E6007E), to(#951B81));
-  background: -o-linear-gradient(bottom, #E6007E, #951B81);
   background: linear-gradient(360deg, #E6007E, #951B81);
   background-position: center;
   background-repeat: no-repeat;
@@ -968,7 +966,6 @@ form button {
   min-width: 1428px;
   height: 275px;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(9%, #301546), color-stop(55.21%, #673D89), to(#9354C7));
-  background: -o-linear-gradient(bottom, #301546 9%, #673D89 55.21%, #9354C7 100%);
   background: linear-gradient(0deg, #301546 9%, #673D89 55.21%, #9354C7 100%);
 }
 @media screen and (max-width: 430px) {
@@ -1357,7 +1354,6 @@ form button {
   border-radius: 14px;
   border: none;
   background: -webkit-gradient(linear, left bottom, left top, from(#E6007E), to(#951B81));
-  background: -o-linear-gradient(bottom, #E6007E, #951B81);
   background: linear-gradient(360deg, #E6007E, #951B81);
   background-position: center;
   background-repeat: no-repeat;
@@ -1384,7 +1380,6 @@ form button {
 .section-9 {
   min-width: 1428px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(202, 147, 246, 0.5)), color-stop(90.63%, rgba(234, 234, 234, 0.5)));
-  background: -o-linear-gradient(top, rgba(202, 147, 246, 0.5) 0%, rgba(234, 234, 234, 0.5) 90.63%);
   background: linear-gradient(180deg, rgba(202, 147, 246, 0.5) 0%, rgba(234, 234, 234, 0.5) 90.63%);
 }
 @media screen and (max-width: 430px) {
