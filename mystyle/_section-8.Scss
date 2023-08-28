@@ -5,11 +5,14 @@
     justify-content: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 556px;
+     
     height:calc(556px * (100 / 75)); 
     @include mobile{
         min-width:auto;
         background-image: url(../images/DJI_0226-2-mobile.png);
+    }
+    @include tablet{
+        min-width:auto;
     }
 }
 .section-8-contaner{
@@ -20,6 +23,9 @@
      
         min-width:auto;
     }
+    @include tablet{
+        min-width:auto;
+    }
 }
 .section-8-contant{
     display: flex;
@@ -27,7 +33,7 @@
     justify-content: center;
     margin: 0 auto;
     padding-top: 32px;
-    width: 653px;
+    max-width: 653px;
     height: 174px;
     border-radius: 7px;
     background: rgba(34, 0, 132, 0.50);

@@ -13,16 +13,23 @@
         min-width:auto;
        
     }
+    @include tablet{
+        height: auto;
+        min-width:auto;
+    }
+
 }
     .siler1{
         min-width:1428px;
-        background-image: url(../images/slıde-1.png);
+        background-image: url(../images/IMG_2688.PNG);
         height: 1080px;
+ 
         @include mobile{
-            background-size: cover;
-            min-width: 430px;
-            background-image: url(../images/slider-1-mobile.png);
-       
+            min-width:auto;
+          
+        }
+        @include tablet{
+            min-width:auto;
         }
     }
     .siler2{
@@ -33,12 +40,18 @@
             min-width:auto;
           
         }
+        @include tablet{
+            min-width:auto;
+        }
     }
     .section-one-container{
         width:1428px;
         margin: 0 auto;
        position: relative;
         @include mobile{
+            width:auto;
+        }
+        @include tablet{
             width:auto;
         }
     }

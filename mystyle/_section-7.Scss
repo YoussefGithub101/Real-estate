@@ -7,15 +7,21 @@
     @include mobile{
         min-width:auto;
     }
+    @include tablet{
+        min-width:auto;
+    }
 }
 .section-7-contaner{
     /* background-color: rgba(255, 0, 0, 0.473); */
     padding: 100px 0;
-    
+    overflow: hidden;
     max-width: 1579px;
     min-width:1428px;
     @include mobile{
      
+        min-width:auto;
+    }
+    @include tablet{
         min-width:auto;
     }
 }
@@ -27,7 +33,7 @@
     border-radius: 35.5px;
     background: #5C2A84;
     align-items: center;
-    justify-content: end;
+
     h3{
          padding-right: 16.32px;
         color: #FFF;
@@ -43,8 +49,13 @@
         }
     }
     @include mobile{
+         
+        border-radius: 0px;
+        border-top-right-radius: 35.5px;
+        border-bottom-right-radius: 35.5px;
         width: 438px;
         height: 71px;
+       
     }
 }
 .section-7-icons{
@@ -67,14 +78,23 @@
     }
 }
 .section-7-col{
- 
+  
     width: 476.481px;
+    @include mobile{
+        margin-left: -38px;
+        max-width: 476px;
+        width: 100%;
+    }
 }
 .row-7{
+    padding: 20px 0;
     gap:50px;
     width: 100%;
     row-gap: 87px;
-
+  
+    @include mobile{
+        justify-content: flex-start !important;
+    }
 }
 
 
@@ -87,10 +107,7 @@
     .h-line,.v-line,.v-dot,.h-dot{
         display: none;
     }
-    .row-7{
-        padding-left: 233px;
-
-    }
+ 
     .empty-container{
         position: absolute;
     }

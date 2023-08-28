@@ -8,6 +8,11 @@
         margin-top:-100px;
         min-width:auto;
     }
+    @include tablet{
+       
+        margin-top:-450px;
+        min-width:auto;
+    }
 }
 .section-form-contaner{
     margin: 0 auto;
@@ -15,12 +20,16 @@
     @include mobile{
         width: auto;
     }
+    @include tablet{
+        width: auto;
+    }
 }
 .section-form-img{
- 
+    margin: 0 auto;
   width: 100%;
   border-radius: 30px;
   height: 100%; 
+ 
 }
 @include mobile{
     .section-form-img-col{
@@ -34,6 +43,7 @@
         margin: auto;
     }
 }
+
 .form-row {
 
     width: 100%;
@@ -121,7 +131,7 @@ form{
         }
     }
     button{
-        fill: linear-gradient(360deg, #E30613 0%, #E6007E 32.81%, #951B81 61.46%, #009FE3 100%);
+    
             filter: drop-shadow(0px 0px 10px rgba(103, 61, 137, 0.35));
         border-radius: 14px;
         border: none;
@@ -131,7 +141,8 @@ form{
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        width: 594px;
+        max-width: 594px;
+        width: 100%;
         height: 48px;
         /* ----------- */
         color: #FFF;
@@ -147,4 +158,14 @@ form{
             width: 100%;
         }
     }
+}
+@media screen and (min-width: 431px) and (max-width: 575px){
+    .section-form{
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+    .section-form-img-col{
+        display: none;
+    }
+   
 }

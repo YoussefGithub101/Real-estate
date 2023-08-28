@@ -3,3 +3,14 @@
         @content;
     }
 }
+
+@mixin tablet {
+    @media screen and (min-width: 431px) and (max-width: 991px) {
+        @content;
+    }
+}
+@mixin tablet2 {
+    @media screen and (min-width: 431px) and (max-width: 1199px) {
+        @content;
+    }
+}

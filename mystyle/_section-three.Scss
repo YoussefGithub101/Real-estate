@@ -13,6 +13,10 @@
         background-repeat: no-repeat;
        
     }
+    @include tablet{
+        min-width:auto;
+        height: auto;
+    }
 }
 .section-three-contaner{
     margin: 0 auto;
@@ -26,6 +30,10 @@
 
         width: auto;
         height:calc( 904px * (100 / 75)); 
+    }
+    @include tablet{
+        width: auto;
+        height: 825px;
     }
 }
 .section-three-content{

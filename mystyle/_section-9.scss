@@ -6,6 +6,9 @@
         min-width:auto;
       
     }
+    @include tablet{
+        min-width:auto;
+    }
 }
 .section-9-contaner{
     padding-bottom: 48px;
@@ -16,6 +19,9 @@
     @include mobile{
         min-width:auto;
       
+    }
+    @include tablet{
+        min-width:auto;
     }
 }
 .section-9-contaner h2{
@@ -97,16 +103,19 @@
         height: 43px;
     }
 }
-
+.section-9-card{
+    margin: 0 auto;
+     
+}
 @media screen and (min-width: 430px) and (max-width: 1147px)  {
-    .section-9-col{
+/*     .section-9-col{
        
        width: 40%;
        
-    }
-    .section-9-card{
+    } */
+/*     .section-9-card{
         margin: 0 auto;
-    }
+    } */
 }
 @include mobile{
     .section-9-col{

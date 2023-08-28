@@ -13,6 +13,10 @@
         height: 723px;
         height: calc(723px * (100 / 75));
     } 
+    @include tablet{
+        min-width:auto;
+       
+    }
 }
 .section-10-contaner{
     margin:0 auto;
@@ -23,6 +27,9 @@
          width:auto;
  
     } 
+    @include tablet{
+        width:auto;
+    }
 }
 .section-10-contant{
     position: absolute;

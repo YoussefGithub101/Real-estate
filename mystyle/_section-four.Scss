@@ -7,6 +7,8 @@
  /*   background-size: 100% calc(100vw * (100 / 75)); */
     background-repeat: no-repeat;
     background-position: center;
+    /* background-size: cover; */
+    
     min-width:1428px;
     height: 946px;
     @include mobile{
@@ -19,7 +21,19 @@
         height:calc( 1495px * (100 / 75)); 
         
     }
+    @include tablet{
+        top: -278px;
+        
+        min-width: auto;
+        width: 100%;
+        background-size: cover;
+      /*   min-width: 440px; */
+      height: 1488.333333px;
+      
+    }
+
 }
+
 .section-four-contaner{
     width: 1428px;
     margin: 0 auto;
@@ -27,6 +41,10 @@
     top:240px;
     @include mobile{
         width: auto;
+    }
+    @include tablet{
+        width: auto;
+        top:390px;
     }
     h2{
         color: #FFF;
@@ -41,7 +59,8 @@
 }
 .four-row{
     margin-top: 105px;
-    width: 1428px;
+     width: 100%;
+     row-gap: 50px;
     @include mobile{
         width: auto;
         flex-direction: column;
@@ -88,8 +107,8 @@
     }
 }
 .section-four-photo{
-    float: right;
     margin-top: 26px;
+    margin: 0 auto;
     z-index: 1;
     width: 294.22px;
     height: 297.929px;
@@ -109,5 +128,46 @@
         float: none;
         height: 330px
     }
-
+    @include tablet{
+        float: none;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 991px) and (max-width: 1199px){
+    .section-four{
+        top:-251px;
+        
+        width: 100%;
+        background-size: cover;
+      /*   min-width: 440px; */
+      height: 1360px;
+     
+    }
+    .section-four-contaner {
+        width: 1428px;
+        margin: 0 auto;
+        position: relative;
+        top: 269px;
+    }
+ 
+}
+@media screen and (min-width: 431px) and (max-width: 575px){
+    .section-four{
+        top:-4px;
+        
+        background-image: none;
+        background-color: #B9133B;
+        min-width: auto;
+        width: 100%;
+        overflow: hidden;
+      /*   min-width: 440px; */
+        height:1585.333333px; 
+         
+     
+    }
+    .section-four-contaner {
+        width: auto;
+        top: 34px;
+    }
+ 
 }
