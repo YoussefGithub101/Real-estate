@@ -855,6 +855,7 @@ form button {
     top: 83px;
     right: 59px;
     font-size: 23px;
+    -webkit-text-size-adjust: 65% !important;
     width: 284px;
     height: 103px;
   }
