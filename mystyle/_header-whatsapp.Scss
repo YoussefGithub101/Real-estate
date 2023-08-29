@@ -26,7 +26,7 @@
     background-position: center;
     background-size: cover; 
     @include mobile{
-        width: 159px;
+        width: 166px;
         height: 66px;
        
         margin: 0  auto;
@@ -97,7 +97,7 @@
     box-shadow: 0px 0px 10px 0px #1BD741;
     @include mobile{
         width: 332px;
-        
+        margin-right: 0;
     }
     a{
         padding-left: 20px;
