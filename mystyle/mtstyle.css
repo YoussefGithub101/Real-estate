@@ -326,7 +326,7 @@ body {
 }
 @media screen and (max-width: 430px) {
   .section-two-logo h2 {
-    width: 15.6875rem;
+    width: 279px;
     height: 99px;
     font-size: 1.5625rem;
     -webkit-text-size-adjust: 70%;
