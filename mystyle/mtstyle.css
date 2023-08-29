@@ -333,6 +333,8 @@ body {
     height: 99px;
     font-size: 1.5625rem;
     -webkit-text-size-adjust: 70%;
+    -moz-text-size-adjust: 100%;
+         text-size-adjust: 100%;
   }
 }
 
@@ -859,6 +861,8 @@ form button {
     right: 59px;
     font-size: 23px;
     -webkit-text-size-adjust: 65% !important;
+    -moz-text-size-adjust: 100%;
+         text-size-adjust: 100%;
     width: 284px;
     height: 103px;
   }
