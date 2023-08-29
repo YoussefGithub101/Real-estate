@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 @charset "UTF-8";
 /* ------------header--------- */
 @font-face {
@@ -20,17 +13,17 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  -webkit-text-size-adjust: 75% !important;
+/* Target Safari browsers */
+@supports (-webkit-text-size-adjust: none) {
+  body {
+    -webkit-text-size-adjust: 75% !important;
+  }
 }
-
 .logo {
   position: fixed;
   padding: 57px 27px 15px 9px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   z-index: 30;
   width: 240px;
   height: 169px;
@@ -49,8 +42,7 @@ body {
   }
 }
 .logo .logo-img {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   width: 216px;
   height: 85px;
   background: url(../images/image\ 1.png);
@@ -67,41 +59,23 @@ body {
 }
 
 .whatsapp {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-items: center;
+  align-self: center;
 }
 @media screen and (max-width: 430px) {
   .whatsapp {
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: row !important;
-            flex-direction: row !important;
+    flex-direction: row !important;
     margin: 0 auto;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
 }
 
 .section-whatsapp {
   position: fixed;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
   bottom: 70px;
   right: 63px;
   z-index: 5;
@@ -109,19 +83,13 @@ body {
 @media screen and (max-width: 430px) {
   .section-whatsapp {
     right: 50%;
-    -webkit-transform: translate(50%);
-        -ms-transform: translate(50%);
-            transform: translate(50%);
+    transform: translate(50%);
   }
 }
 
 .whatsapp-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   background-image: url(../images/Ellipse\ 14.svg);
   background-position: center;
   background-size: cover;
@@ -137,9 +105,7 @@ body {
   }
 }
 .whatsapp-logo img {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
 }
 @media screen and (max-width: 430px) {
   .whatsapp-logo img {
@@ -155,8 +121,7 @@ body {
   border-radius: 10px;
   border: 1px solid #49FE6E;
   background: #1BD741;
-  -webkit-box-shadow: 0px 0px 10px 0px #1BD741;
-          box-shadow: 0px 0px 10px 0px #1BD741;
+  box-shadow: 0px 0px 10px 0px #1BD741;
 }
 @media screen and (max-width: 430px) {
   .contact-us {
@@ -249,9 +214,7 @@ body {
     right: auto;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, 100%);
-        -ms-transform: translate(-50%, 100%);
-            transform: translate(-50%, 100%);
+    transform: translate(-50%, 100%);
   }
 }
 .contant h1 {
@@ -292,20 +255,11 @@ body {
   width: 366px;
   height: 48px;
   border-radius: 10px;
-  -webkit-box-shadow: 0px 0px 10px 0px #E6007E;
-          box-shadow: 0px 0px 10px 0px #E6007E;
-  background: -webkit-gradient(linear, left bottom, left top, from(#E6007E), to(#951B81));
-  background: -o-linear-gradient(bottom, #E6007E, #951B81);
+  box-shadow: 0px 0px 10px 0px #E6007E;
   background: linear-gradient(360deg, #E6007E, #951B81);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   color: #FFF;
   text-decoration: none;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
@@ -486,13 +440,8 @@ body {
   width: 1428px;
   height: 825px;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   position: relative;
 }
 @media screen and (max-width: 430px) {
@@ -518,9 +467,7 @@ body {
     width: 374px;
     height: 233px;
     right: 50%;
-    -webkit-transform: translate(50%);
-        -ms-transform: translate(50%);
-            transform: translate(50%);
+    transform: translate(50%);
   }
 }
 .section-three-content h1 {
@@ -556,8 +503,7 @@ body {
 .section-three-content .btn-contact-us {
   margin-top: 50px;
   border-radius: 10px;
-  -webkit-box-shadow: 0px 0px 10px 0px #E6007E;
-          box-shadow: 0px 0px 10px 0px #E6007E;
+  box-shadow: 0px 0px 10px 0px #E6007E;
 }
 @media screen and (max-width: 430px) {
   .section-three-content .btn-contact-us {
@@ -617,13 +563,8 @@ body {
 @media screen and (max-width: 430px) {
   .four-row {
     width: auto;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    justify-content: center;
     margin: 0 auto;
     margin-top: 105px;
     gap: 46px;
@@ -644,37 +585,21 @@ body {
   margin: auto;
   top: 0;
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 294.22px;
   height: 80.354px;
   border-radius: 20px;
   background: #D8D8D8;
-  -webkit-box-shadow: 0px 4px 4px 0px rgba(103, 61, 137, 0.35);
-          box-shadow: 0px 4px 4px 0px rgba(103, 61, 137, 0.35);
+  box-shadow: 0px 4px 4px 0px rgba(103, 61, 137, 0.35);
   z-index: 5;
 }
 .section-four-content h3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 217.575px;
   height: 54.394px;
   color: #673D89;
@@ -692,17 +617,10 @@ body {
   height: 297.929px;
   border-radius: 18px;
   background: #EAEAEA;
-  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .section-four-photo img {
   margin-top: 50px;
@@ -762,13 +680,8 @@ body {
 }
 
 form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 15px;
 }
 form h2 {
@@ -790,14 +703,10 @@ form input {
   background: #FFF;
   margin: 0 auto;
   text-align: right;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 598px;
   height: 66px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   color: #808080;
   text-align: right;
   font-family: "Al-Jazeera-Arabic-Regular", sans-serif;
@@ -806,36 +715,6 @@ form input {
   padding-right: 31px;
 }
 form input::-moz-placeholder {
-  direction: rtl;
-  color: #808080;
-  text-align: right;
-  font-family: "Al-Jazeera-Arabic-Regular", sans-serif;
-  font-size: 20px;
-  font-weight: 300;
-  font-style: normal;
-  line-height: normal;
-}
-form input::-webkit-input-placeholder {
-  direction: rtl;
-  color: #808080;
-  text-align: right;
-  font-family: "Al-Jazeera-Arabic-Regular", sans-serif;
-  font-size: 20px;
-  font-weight: 300;
-  font-style: normal;
-  line-height: normal;
-}
-form input:-ms-input-placeholder {
-  direction: rtl;
-  color: #808080;
-  text-align: right;
-  font-family: "Al-Jazeera-Arabic-Regular", sans-serif;
-  font-size: 20px;
-  font-weight: 300;
-  font-style: normal;
-  line-height: normal;
-}
-form input::-ms-input-placeholder {
   direction: rtl;
   color: #808080;
   text-align: right;
@@ -865,8 +744,6 @@ form textarea {
   border-radius: 5px;
   border: 2px solid #EAEAEA;
   background: #FFF;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 598px;
   height: 315px;
@@ -881,36 +758,6 @@ form textarea {
   padding-right: 31px;
 }
 form textarea::-moz-placeholder {
-  direction: rtl;
-  color: #808080;
-  text-align: right;
-  font-family: "Al-Jazeera-Arabic-Regular", sans-serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-}
-form textarea::-webkit-input-placeholder {
-  direction: rtl;
-  color: #808080;
-  text-align: right;
-  font-family: "Al-Jazeera-Arabic-Regular", sans-serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-}
-form textarea:-ms-input-placeholder {
-  direction: rtl;
-  color: #808080;
-  text-align: right;
-  font-family: "Al-Jazeera-Arabic-Regular", sans-serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-}
-form textarea::-ms-input-placeholder {
   direction: rtl;
   color: #808080;
   text-align: right;
@@ -937,14 +784,11 @@ form textarea::placeholder {
   }
 }
 form button {
-  -webkit-filter: drop-shadow(0px 0px 10px rgba(103, 61, 137, 0.35));
-          filter: drop-shadow(0px 0px 10px rgba(103, 61, 137, 0.35));
+  filter: drop-shadow(0px 0px 10px rgba(103, 61, 137, 0.35));
   border-radius: 14px;
   border: none;
   margin: 0 auto;
   margin-top: 20px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#E6007E), to(#951B81));
-  background: -o-linear-gradient(bottom, #E6007E, #951B81);
   background: linear-gradient(360deg, #E6007E, #951B81);
   background-position: center;
   background-repeat: no-repeat;
@@ -971,8 +815,6 @@ form button {
   position: relative;
   min-width: 1428px;
   height: 275px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(9%, #301546), color-stop(55.21%, #673D89), to(#9354C7));
-  background: -o-linear-gradient(bottom, #301546 9%, #673D89 55.21%, #9354C7 100%);
   background: linear-gradient(0deg, #301546 9%, #673D89 55.21%, #9354C7 100%);
 }
 @media screen and (max-width: 430px) {
@@ -987,13 +829,9 @@ form button {
   position: relative;
   margin: 0 auto;
   width: 1428px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 275px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 @media screen and (max-width: 430px) {
   .section-six-contaner {
@@ -1042,9 +880,7 @@ form button {
     background-image: url(../images/question-mark2-mobile.svg);
     background-repeat: no-repeat;
     background-size: 1229.5px 27.94px;
-    -webkit-transform: scaleX(-1);
-        -ms-transform: scaleX(-1);
-            transform: scaleX(-1);
+    transform: scaleX(-1);
     bottom: -4px;
     overflow: hidden;
   }
@@ -1105,12 +941,8 @@ form button {
   height: 77.238px;
   border-radius: 35.5px;
   background: #5C2A84;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  align-items: center;
+  justify-content: end;
 }
 .section-7-contant h3 {
   padding-right: 16.32px;
@@ -1145,15 +977,9 @@ form button {
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
   background: rgba(255, 255, 255, 0.9);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   z-index: 4;
 }
 .section-7-icons img {
@@ -1206,9 +1032,7 @@ form button {
   height: 18px;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .v-line {
@@ -1228,54 +1052,36 @@ form button {
   height: 18px;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 @media screen and (max-width: 430px) {
   .section-7-col:nth-child(1) {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    order: 1;
   }
   .section-7-col:nth-child(2) {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    order: 2;
   }
   .section-7-col:nth-child(3) {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
+    order: 3;
   }
   .section-7-col:nth-child(4) {
-    -webkit-box-ordinal-group: 7;
-        -ms-flex-order: 6;
-            order: 6;
+    order: 6;
   }
   .section-7-col:nth-child(5) {
-    -webkit-box-ordinal-group: 6;
-        -ms-flex-order: 5;
-            order: 5;
+    order: 5;
   }
   .section-7-col:nth-child(6) {
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
+    order: 4;
   }
   .section-7-col:nth-child(7) {
-    -webkit-box-ordinal-group: 8;
-        -ms-flex-order: 7;
-            order: 7;
+    order: 7;
   }
 }
 .section-8 {
   min-width: 1428px;
   background-image: url(../images/DJI_0226\ 2.png);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 556px;
@@ -1300,15 +1106,9 @@ form button {
 }
 
 .section-8-contant {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
   padding-top: 32px;
   width: 653px;
@@ -1348,21 +1148,12 @@ form button {
 
 .contact-us8 {
   text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-filter: drop-shadow(0px 0px 10px rgba(103, 61, 137, 0.35));
-          filter: drop-shadow(0px 0px 10px rgba(103, 61, 137, 0.35));
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0px 0px 10px rgba(103, 61, 137, 0.35));
   border-radius: 14px;
   border: none;
-  background: -webkit-gradient(linear, left bottom, left top, from(#E6007E), to(#951B81));
-  background: -o-linear-gradient(bottom, #E6007E, #951B81);
   background: linear-gradient(360deg, #E6007E, #951B81);
   background-position: center;
   background-repeat: no-repeat;
@@ -1388,8 +1179,6 @@ form button {
 
 .section-9 {
   min-width: 1428px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(202, 147, 246, 0.5)), color-stop(90.63%, rgba(234, 234, 234, 0.5)));
-  background: -o-linear-gradient(top, rgba(202, 147, 246, 0.5) 0%, rgba(234, 234, 234, 0.5) 90.63%);
   background: linear-gradient(180deg, rgba(202, 147, 246, 0.5) 0%, rgba(234, 234, 234, 0.5) 90.63%);
 }
 @media screen and (max-width: 430px) {
@@ -1439,8 +1228,7 @@ form button {
   height: 435px;
   border-radius: 13px;
   background: #EBD5FE;
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(103, 61, 137, 0.5);
-          box-shadow: 0px 0px 10px 0px rgba(103, 61, 137, 0.5);
+  box-shadow: 0px 0px 10px 0px rgba(103, 61, 137, 0.5);
 }
 .section-9-card img {
   width: 360px;
@@ -1452,9 +1240,7 @@ form button {
   position: absolute;
   margin: 0 auto;
   left: 50%;
-  -webkit-transform: translate(-50%, 0);
-      -ms-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
   top: 185px;
   width: 170px;
   height: 40px;
@@ -1510,9 +1296,7 @@ form button {
 .section-10 {
   min-width: 1428px;
   background-image: url(../images/section-10.png);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 671px;
@@ -1553,9 +1337,7 @@ form button {
   .section-10-contant {
     right: auto;
     left: 50%;
-    -webkit-transform: translate(-50%, 0%);
-        -ms-transform: translate(-50%, 0%);
-            transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
     top: 455px;
     width: 377px;
     height: 352px;
@@ -1583,4 +1365,4 @@ form button {
   height: 43px;
 }
 
-/* ----------------------------section---------------- */
+/* ----------------------------section---------------- *//*# sourceMappingURL=mtstyle.css.map */

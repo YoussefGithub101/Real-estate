@@ -14,8 +14,11 @@ html {
     scroll-behavior:smooth;
    
 }
-body{
-  -webkit-text-size-adjust: 75% !important;
+/* Target Safari browsers */
+@supports (-webkit-text-size-adjust: none) {
+  body {
+    -webkit-text-size-adjust: 75% !important;
+  }
 }
 
 @import 'header-whatsapp';
