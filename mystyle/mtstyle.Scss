@@ -15,11 +15,12 @@ html {
    
 }
 /* Target Safari browsers */
-@supports (-webkit-text-size-adjust: none) {
+ 
   body {
     -webkit-text-size-adjust: 75% !important;
+      text-size-adjust:100%!important;
   }
-}
+ 
 
 @import 'header-whatsapp';
 @import 'section-one';
