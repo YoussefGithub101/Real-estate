@@ -45,7 +45,7 @@ body {
 }
 @media screen and (max-width: 430px) {
   .logo {
-    top: 69px;
+    top: 0px;
     width: 100%;
     height: 79px;
     padding: 0 6px;
@@ -64,8 +64,8 @@ body {
 }
 @media screen and (max-width: 430px) {
   .logo .logo-img {
-    width: 166px;
-    height: 66px;
+    width: 180px;
+    height: 70px;
     margin: 0 auto;
   }
 }
